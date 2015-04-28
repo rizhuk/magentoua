@@ -1,0 +1,28 @@
+<div class="footer-links">
+<div class="box-links infomation-links">
+<h1 class="page-title-footer">Infomation</h1>
+<ul class="block-content-footer">
+<li class="first"><a title="About Us" href="{{store url='about-magento-demo-store'}}">About us</a></li>
+<li><a title="Delivery" href="#">Delivery</a></li>
+<li><a title="Privacy Policy" href="#">Privacy Policy</a></li>
+<li class="last"><a title="Terms &amp; Conditions" href="#">Terms &amp; Conditions</a></li>
+</ul>
+</div>
+<div class="box-links customer-service-links">
+<h1 class="page-title-footer">Customer Service</h1>
+<ul class="block-content-footer">
+<li class="first"><a title="Contact Us" href="{{store url='contacts'}}">Contact Us</a></li>
+<li><a title="Returns" href="{{store url='sales/guest/form'}}">Returns</a></li>
+<li><a title="Site Map" href="{{store url='catalog/seo_sitemap/category'}}">Site Map</a></li>
+<li class="last"><a title="Advanced Search" href="{{store url='catalogsearch/advanced'}}">Advanced Search</a></li>
+</ul>
+</div>
+<div class="box-links extras-links">
+<h1 class="page-title-footer">Extras</h1>
+<ul class="block-content-footer">
+<li class="first"><a title="Brands" href="{{store url='manufacture'}}">Brands</a></li>
+<li><a title="Gift Vouchers" href="#">Gift Vouchers</a></li>
+<li class="last"><a title="Affiliates" href="#">Affiliates</a></li>
+</ul>
+</div>
+{{block type="newsletter/subscribe" name="left.newsletter" template="newsletter/subscribe.phtml"}}</div>

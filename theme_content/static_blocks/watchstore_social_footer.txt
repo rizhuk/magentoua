@@ -1,0 +1,9 @@
+<div class="social-network">
+<ul>
+<li class="first item facebook"><a title="Facebook" href="#">Facebook</a></li>
+<li class="item twitter"><a title="Twitter" href="#">Twitter</a></li>
+<li class="item blog"><a title="Blog" href="#">Blog</a></li>
+<li class="item skype"><a title="Skype" href="#">Skype</a></li>
+<li class="last item google"><a title="Google+" href="#">Google+</a></li>
+</ul>
+</div>

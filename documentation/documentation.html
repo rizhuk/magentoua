@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css"/>
+	<link type="image/x-icon" href="images/favicon.ico" rel="icon">
+	<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.fancybox').fancybox();
+		});
+	</script>
+	<title>Buzzthemes - Documentation</title>
+	<!--[if lt IE 9]>
+		<link media="all" type="text/css" href="css/bootstrap.css" rel="stylesheet" />
+	<![endif]-->
+	<!--[if lt IE 7]>
+		<script type="text/javascript" src="js/iehover-fix.js"></script>
+		<script type="text/javascript" src="js/ds-sleight.js"></script>
+	<![endif]-->
+	<!--[if lt IE 8]>
+		<link rel="stylesheet" type="text/css" href="css/style-ie.css"/>
+	<![endif]-->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="hideshow">
+					<h1 class="logo">
+						<a class="logo" href="#" title="MageBuzz" target="_blank"><img alt="MageBuzz" src="images/logo.png"/></a>
+					</h1>
+					<div class="hideshow-right">
+						<h2 class="guide">Buzzthemes Installation Guide</h2>
+					</div>
+				</div>
+				<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+					<div class="navbar-header">
+						<div class="hed-left">
+							<h1 class="logo2">
+								<a class="logo2" href="#" title="BuzzThemes"><img alt="BuzzThemes" src="images/logo.png"/></a>
+							</h1>
+							<div class="navbar-brand">
+								<h2 class="guide">Buzzthemes Installation Guide</h2>
+							</div>
+						</div>
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-collapse collapse">
+							<li><a class="introduction" href="#intro" title="Introduction">Introduction</a>
+								<ul class="nav2">
+									<li><a href="#about-buzzthemes">Buzzthemes</a></li>
+									<li><a href="#features">Features</a></li>
+								</ul>
+							</li>
+							<li><a class="installation" href="#how-to-install" title="Install">How To Install</a>
+								<ul class="nav2">
+									<li><a href="#install-template-package">Install template package</a></li>
+									<li>
+										<a href="#template-configuration">Template Configuration</a>
+										<ul>
+											<li><a href="#activate-new-template">Activate new template</a></li>
+											<li><a href="#pages-configuration">CMS Pages Configuration</a></li>
+											<li><a href="#static-blocks-configuration">Static Blocks Configuration</a></li>
+										</ul>
+									</li>
+									<li><a href="#how-to-install-add-ons">Install add-ons</a></li>
+								</ul>
+							</li>
+							<li><a class="support" href="#support-info">Support info</a></li>
+							<li><a class="customize" href="#customization">Customization</a></li>
+						</ul>
+					</div><!--/.nav-collapse -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="container">
+			<div class="main row">
+				<div id="navfix" class="col-left">
+					<div class="sidebar">
+						<ul class="nav">
+							<li><a class="introduction" href="#intro" title="Introduction">Introduction</a>
+								<ul class="nav2">
+									<li><a href="#about-buzzthemes">Buzzthemes</a></li>
+									<li><a href="#features">Features</a></li>
+								</ul>
+							</li>
+							<li><a class="installation" href="#how-to-install" title="Install">How To Install</a>
+								<ul class="nav2">
+									<li><a href="#install-template-package">Install template package</a></li>
+									<li>
+										<a href="#template-configuration">Template Configuration</a>
+										<ul>
+											<li><a href="#activate-new-template">Activate new template</a></li>
+											<li><a href="#pages-configuration">CMS Pages Configuration</a></li>
+											<li><a href="#static-blocks-configuration">Static Blocks Configuration</a></li>
+										</ul>
+									</li>
+									<li><a href="#install-add-ons">Install add-ons</a></li>
+								</ul>
+							</li>
+							<li><a class="support" href="#support-info">Support info</a></li>
+							<li><a class="customize" href="#customization">Customization</a></li>
+						</ul>
+					</div>
+					<script type="text/javascript">
+						$(document).ready(function() {
+							var navpos = $('#navfix').offset();
+								console.log(navpos.top);
+								$(window).bind('scroll', function() {
+								  if ($(window).scrollTop() > navpos.top) {
+									$('#navfix').addClass('fixed');
+								   }
+								   else {
+									 $('#navfix').removeClass('fixed');
+								   }
+								});
+						});
+					</script>
+				</div>
+				<div class="col-main">
+					<div class="main-content">
+						<div class="block">
+								<div class="block-title">
+									<h2 id="intro">Introduction</h2>
+								</div>
+								<div class="block-content">
+									<h3 id="about-buzzthemes">Buzzthemes</h3>
+									<p class="description">
+										Buzzthemes provide a wide range collection of responsive Magento themes. Our themes adapts to different browser sizes. Therefore, instead of needing a separate mobile site or plugin, the content will be resized and rearranged to fit smaller screens.
+									</p>
+									<h3 id="features">Features</h3>
+									<ul class="list-features">
+										<li>100% Responsive Design</li>
+										<li>Compatible with all major browsers</li>
+										<li>Easy to customize and upgrade</li>
+										<li>Follow Magento template coding standard</li>
+										<li>Magento Compatibility: 1.5.x, 1.6.x, 1.7.x, 1.8.x</li>
+									</ul>
+								</div>
+						</div>
+						<div class="block">
+							<div class="block-title">
+								<h2 id="how-to-install">How To Install</h2>
+							</div>
+							<div class="block-content">
+								<p id="install-template-package" class="step-number">1. Install template package</p>
+								<div class="des-step">
+									<div class="step">
+										<ul>
+											<li><strong>Step 1:</strong> Open <a href="http://www.buzzthemes.com/">www.buzzthemes.com</a>, log in your account</li>
+											<li><strong>Step 2: </strong> Go to <strong>My Account > My Downloadable Products</strong> and download template package</li>
+											<li><strong>Step 3: </strong>Extract template package into your local computer. You can see some folders:
+												<ul class="file-structure">
+													<li>add-ons - <span class="note">Source code of extension</span></li>
+													<li>documentation - <span class="note">Documentation files</span></li>
+													<li>psd & font - <span class="note">Adobe Photoshop files & Fonts</span></li>
+													<li>sources - <span class="note">Magento theme files that should be uploaded to the root directory of your Magento site</span>
+														<ul class="file-structure">
+															<li>1.5.x</li>
+															<li>1.6.x</li>
+															<li>1.7.x</li>
+															<li>1.8.x</li>
+															<li>...</li>
+														</ul>
+													</li>
+													<li>theme_contents - <span class="note">Theme content (CMS pages & Static blocks) files</span></li>
+												</ul>
+											</li>
+											<li><strong>Step 4: </strong> Log into Magento backend and go to <strong>System > Cache Management</strong>, disable all cache type. </li>
+											<li><strong>Step 5: </strong> Choose the most appropriate packages with your magento version from "sources" folder to upload to your site. After that, use FTP client (like Filezilla, WinSCP, cuteFTP) to upload (copy) folders to your Magento site root folder.</li>
+										</ul>
+									</div>
+									<div class="step-img"><a class="fancybox" title="My Downloadable Products" href="images/my_downloadable_products.png"><img alt="Demo" src="images/my_downloadable_products.png"/></a></div>
+									<div class="clear"></div>
+								</div>
+								<p id="template-configuration" class="step-number">2. Template Configuration</p>
+								<h3 id="activate-new-template">Activate new template</h3>
+								<div class="des-step">
+									<div class="step">
+										<p>Your web-site remains using the old template after this template has been installed. You can choose 1 in 2 solutions to activate new template</p>
+										<strong>Solution 1:</strong>
+										<ul class="list-step">
+											<li>Login admin panel</li>
+											<li>Go to <strong>System > Design</strong></li>
+											<li>Click <strong>Add Design Change</strong></li>
+											<li>Select the theme which you have created in folder structure</li>
+										</ul>
+										<strong>Solution 2:</strong>
+										<ul class="list-step">
+											<li>Login admin panel</li>
+											<li>Go to <strong>System > Configuration</strong></li>
+											<li>
+												Choose tab <strong>Design</strong> on the left side menu
+												<ul>
+													<li>Package section: Fill the package name (Default: default)</li>
+													<li>Themes section: Set template for system by adding name of the new template.</li>
+													<li>Header section: Config new logo for system by changing name of logo image file. Get the name of logo in skin/frontend/package-name/template-name/images</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+									<div class="step-img">
+										<a class="fancybox" title="Activate New Template: System > Design > Add Design Change" href="images/active_new_template_1.png" target="_blank"><img alt="" src="images/active_new_template_1.png"/></a>
+										<a class="fancybox" title="Activate New Template: System > Configuration > Design" href="images/active_new_template_2.png" target="_blank"><img alt="" src="images/active_new_template_2.png"/></a>
+									</div>
+									<div class="clear"></div>
+								</div>
+								<p class="note">During edit CMS and Static blocks, we recommend you to hide WYSIWYG editor by clicking on Show / Hide Editor button above the content section</p>
+								<h3 id="pages-configuration">CMS Pages Configuration</h3>
+								<div class="des-step">
+									<div class="step">
+										<p>For almost template, you need to change the content of home page or add some specific pages.</p>
+										<strong>Add & edit a CMS page:</strong>
+										<ul class="list-step">
+											<li>Login admin panel</li>
+											<li>Select <strong>CMS > Pages</strong> from top menu</li>
+											<li>All pages will avaiable here. Open any of them to edit the page content. In case you need to add new page click the <strong>Add New Page</strong> button in the top right corner.</li>
+											<li>Input the <strong>Page Title</strong> and <strong>URL Key</strong></li>
+											<li>From the left column select the Content tab. It contains the HTML code of the page. Get the content on txt file for each page from folder <strong>theme_contents/cms_pages</strong></li>
+											<li>Switch to <strong>Design</strong> tab to change the layout of page and update XML content .</li>
+										</ul>
+										<p class="theme_info"><a href="theme_content.html">Click here to view list of CMS Pages. </a></p>
+									</div>
+									<div class="step-img">
+										<a class="fancybox" title="All CMS Pages" href="images/cms_pages.png" target="_blank"><img alt="All CMS Pages" src="images/cms_pages.png"/></a>
+										<a class="fancybox" title="Add New Page" href="images/add_new_cms_page.png" target="_blank"><img alt="Add New Page" src="images/add_new_cms_page.png"/></a>
+										<a class="fancybox" title="Edit a CMS page" href="images/edit_cms_page.png" target="_blank"><img alt="Edit a CMS page" src="images/edit_cms_page.png"/></a>
+									</div>
+									<div class="clear"></div>
+								</div>
+								<p class="note">During edit CMS and Static blocks, we recommend you to hide WYSIWYG editor by clicking on Show / Hide Editor button above the content section</p>
+								<h3 id="static-blocks-configuration">Static Blocks Configuration</h3>
+								<div class="des-step">
+									<div class="step">
+										<p>In the template, some layout objects will generate from a static block because they are not only show on home page. To add & edit the blocks to your store please use the instructions below.</p>
+										<strong>Add & edit a static block:</strong>
+										<ul class="list-step">
+											<li>Login admin panel</li>
+											<li>Select <strong>CMS > Static Blocks</strong> from top menu</li>
+											<li>Open a block on the list to edit the content.In case you want to add new block, click the <strong>Add New Block</strong> button in the top right corner</li>
+											<li>Input the <strong>Block Title</strong> and <strong>Identifier</strong></li>
+											<li>Get the content on txt file for each block from folder <strong>theme_contents/static_blocks</strong></li>
+										</ul>
+										<p class="theme_info"><a href="theme_content.html">Click here to view list of static blocks. </a></p>
+									</div>
+									<div class="step-img">
+										<a class="fancybox" title="All Static Blocks" href="images/static_blocks.png" target="_blank"><img alt="All Static Blocks" src="images/static_blocks.png"/></a>
+										<a class="fancybox" title="Add New Block" href="images/add_new_static_block.png" target="_blank"><img alt="Add New Block" src="images/add_new_static_block.png"/></a>
+										<a class="fancybox" title="Edit a block" href="images/edit_static_block.png" target="_blank"><img alt="Edit a block" src="images/edit_static_block.png"/></a>
+									</div>
+									<div class="clear"></div>
+								</div>
+								<p id="install-add-ons" class="step-number">3. Install add-ons</p>															<div class="des-step">									<div class="step">										<p>Inside extracted folder of template package, you will see <strong>"add_ons"</strong> folder.<br/> The folder contains extensions which are running in the template. You can decide which extensions to use for the template.</p>										<p>In order to install the extension, please follow these steps: </p>																					<ul class="list-step">											<li>Navigate inside the extension directory (Example: Magebuzz Banner, Magebuzz Featured Products,...). You will some folders of extension, such as: app, skin,...</li>											<li>Copy the template & skin folder from default package to the template package of your store. </li>											<li>Using your FTP client upload all files & folders to your store root. </li>																						<li>Refresh your cache</li>											<li>If you can't see configuration section, please logout and login again.</li>																					</ul>									</div>									<div class="step-img">										<a class="fancybox" title="Navigate inside the extension directory (Example: Magebuzz Banner, Magebuzz Featured Products,...)" href="images/install_extension_1.png" target="_blank"><img alt="" src="images/install_extension_1.png"/></a>										<a class="fancybox" title="Upload to magento root folder" href="images/install_extension_2.png" target="_blank"><img alt="" src="images/install_extension_2.png"/></a>									</div>									<div class="clear"></div>								</div>
+							</div>
+						</div>
+						<div class="block">
+							<div class="block-title">
+								<h2 id="support-info">Support Info</h2>
+							</div>
+							<div class="block-content">
+								<p class="description">
+									We provide 6 months free support for all of our products &  services. We are not responsible for any bug or issue caused of your changes to our products. To report a bug, you can easily go to our Support page, email, call or submit a ticket. You can also use our live chat as an effective method for quick response. For any problem you have during installation, please log in our store and submit a ticket at this URL: <a title="" href="http://www.buzzthemes.com/support/">http://www.buzzthemes.com/support/</a>
+								</p>
+							</div>
+						</div>
+						<div class="block">
+							<div class="block-title">
+								<h2 id="customization">Customization</h2>
+							</div>
+							<div class="block-content">
+								<p class="description">
+									Our template is 100% open source and provided under General Public License (http://www.gnu.org/licenses/gpl.html/). You are allowed to completely customize the theme to meet your requirements. In case you want to use our customization service, please send us an email at: <a title="" href="http://www.buzzthemes.com/contacts">http://www.buzzthemes.com/contacts</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="footer-container">
+				<div class="company">
+					<ul>
+						<li>&copy;2014 Buzzthemes. All Rights Reserved</li>
+					</ul>
+				</div>
+				<div class="link">
+					<ul>
+						<li><a href="https://www.facebook.com/BuzzthemesStore" alt="Facebook"><img src="images/fb.png"/></a></li>
+						<li><a href="https://twitter.com/buzzthemes" alt="Twitter"><img src="images/twitter.png"/></a></li>
+						<li><a href="https://plus.google.com/110628722310594260488" alt="Google+"><img src="images/gplus.png"/></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css"/>
+	<link type="image/x-icon" href="images/favicon.ico" rel="icon">
+	<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.fancybox').fancybox();
+		});
+	</script>
+	<title>Buzzthemes - Documentation</title>
+	<!--[if lt IE 9]>
+		<link media="all" type="text/css" href="css/bootstrap.css" rel="stylesheet" />
+	<![endif]-->
+	<!--[if lt IE 7]>
+		<script type="text/javascript" src="js/iehover-fix.js"></script>
+		<script type="text/javascript" src="js/ds-sleight.js"></script>
+	<![endif]-->
+	<!--[if lt IE 8]>
+		<link rel="stylesheet" type="text/css" href="css/style-ie.css"/>
+	<![endif]-->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="hideshow">
+					<h1 class="logo">
+						<a class="logo" href="#" title="MageBuzz" target="_blank"><img alt="MageBuzz" src="images/logo.png"/></a>
+					</h1>
+					<div class="hideshow-right">
+						<h2 class="guide">BuzzThemes Installation Guide</h2>
+						<h3>(Theme Content)</h3>
+					</div>
+				</div>
+				<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+					<div class="navbar-header">
+						<div class="hed-left">
+							<h1 class="logo2">
+								<a class="logo2" href="#" title="BuzzThemes"><img alt="BuzzThemes" src="images/logo.png"/></a>
+							</h1>
+							<div class="navbar-brand">
+								<h2 class="guide">BuzzThemes Installation Guide</h2>
+								<h3>(Theme Content)</h3>
+							</div>
+						</div>
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-collapse collapse">
+							<li><a class="cms_content" href="#cms_content" title="CMS Content">CMS Content</a>
+								<ul class="nav2">
+									<li><a href="#cms_pages">CMS Pages</a></li>
+									<li><a href="#static_blocks">Static Blocks</a></li>
+								</ul>
+							</li>
+							<li><a class="other-config" href="#other-config" title="Other Configurations">Other Configurations</a>
+								<ul class="nav2">
+									<li><a href="#upload-banners">Upload banners</a></li>
+									<li><a href="#add-new-products">Add New Products</a></li>																		<li><a href="#add-lastest-products">Add Special Products</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div><!--/.nav-collapse -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="container">
+			<div class="main row">
+				<div id="navfix" class="col-left">
+					<div class="sidebar">
+						<ul class="nav">
+							<li><a class="cms_content" href="#cms_content" title="CMS Content">CMS Content</a>
+								<ul class="nav2">
+									<li><a href="#cms_pages">CMS Pages</a></li>
+									<li><a href="#static_blocks">Static Blocks</a></li>
+								</ul>
+							</li>
+							<li><a class="other-config" href="#other-config" title="Other Configurations">Other Configurations</a>
+								<ul class="nav2">
+									<li><a href="#upload-banners">Upload banners</a></li>
+									<li><a href="#add-new-products">Add New Products</a></li>									<li><a href="#add-lastest-products">Add Special Products</a></li>									
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<script type="text/javascript">
+						$(document).ready(function() {
+							var navpos = $('#navfix').offset();
+								console.log(navpos.top);
+								$(window).bind('scroll', function() {
+								  if ($(window).scrollTop() > navpos.top) {
+									$('#navfix').addClass('fixed');
+								   }
+								   else {
+									 $('#navfix').removeClass('fixed');
+								   }
+								});
+						});
+					</script>
+				</div>
+				<div class="col-main">
+					<div class="main-content">
+						<div class="block">
+							<div class="block-title">
+								<h2 id="cms_content">CMS Content</h2>
+							</div>
+							<div class="block-content">
+								<p id="cms_pages" class="step-number">CMS Pages</p>
+								<table class="table cms-data-table">
+									<tbody>
+										<tr>
+												<th>#</th>
+												<th>Page Title</th>                      
+												<th>Content</th>
+												<th>Layout</th>
+										</tr>
+										<tr>
+												<td>1.</td>
+												<td>Home Page</td>                        
+												<td>theme_contents\cms_pages\home-page.txt</td>
+												<td>1 column </td>                         
+										</tr>
+									</tbody>
+								</table>
+							<p id="static_blocks" class="step-number">Static Blocks</p>
+							<table class="table cms-data-table">
+									<tbody>
+										<tr>
+												<th>#</th>
+												<th>Block Title</th>                      
+												<th>Identifier</th>
+												<th>Content</th>
+										</tr>
+										<tr>
+												<td>1.</td>
+												<td>watchstore_footer_links</td>                        
+												<td>watchstore_footer_links</td>
+												<td>theme_contents\static_blocks\ watchstore_footer_links.txt</td>                         
+										</tr>
+										<tr>
+												<td>2.</td>
+												<td>watchstore_social_footer</td>                        
+												<td>watchstore_social_footer</td>
+												<td>theme_contents\static_blocks\ watchstore_social_footer.txt</td>                        
+										</tr>
+										<tr>
+												<td>3.</td>
+												<td>watchstore-banner-right</td>                        
+												<td>watchstore-banner-right</td>
+												<td>theme_contents\static_blocks\ watchstore-banner-right.txt</td>                        
+										</tr>																				<tr>												<td>4.</td>												<td>watchtstore_payment_method_logo_footer</td>                        												<td>watchtstore_payment_method_logo_footer</td>												<td>theme_contents\static_blocks\ watchtstore_payment_method_logo_footer.txt</td>                        										</tr>																				
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="block">
+							<div class="block-title">
+								<h2 id="other-config">Other Configurations</h2>
+							</div>
+							<div class="block-content">
+								<p id="upload-banners" class="step-number">1. Upload Banners</p>
+								<div class="des-step">
+									<div class="step">										<p>In this template, we offer some available banners for you to use conveniently. After the template is installed, banners may not be created. You can upload a new banner or edit it through our guide below</p>										<ul class="list-step">											<li>Login admin panel</li>											<li>From the top menu, go to <strong>Banners > Manage Banners</strong>.</li>											<li>Click button <strong>Add New Banner</strong></li>											<li>Input some fields and browse to select banner</li>											<li>Click on <strong>Save Banner</strong> button</li>										</ul>									</div>
+									<div class="step-img">										<a class="fancybox" title="Go to Banners > Manage Banners" href="images/add_new_banner_1.png" target="_blank"><img alt="Go to Banners > Manage Banners" src="images/add_new_banner_1.png"/></a>										<a class="fancybox" title="Add New Banner" href="images/add_new_banner_2.png" target="_blank"><img alt="Add New Banner" src="images/add_new_banner_2.png"/></a>									</div>
+									<div class="clear"></div>
+								</div>
+								<p id="add-new-products" class="step-number">2. Add New Products</p>
+								<div class="des-step">
+									<div class="step">										<p>For new product to show in home page, you will need to select new for each product.</p>										<ul class="list-step">											<li>Login admin panel</li>											<li>From the top menu, go to <strong>Catalog > Manage Products</strong>.</li>											<li>Click to edit product you want to show.</li>											<li>Click on <strong>General</strong> tab on the left column</li>											<li>Choose <strong>Set Product as New from Date</strong></li>											<li>Choose <strong>Set Product as New to Date</strong></li>											<li>Click on <strong>Save</strong> button</li>										</ul>
+									</div>
+									<div class="step-img">										<a class="fancybox" title="Set Product as New" href="images/set_a_product_as_new.png" target="_blank"><img alt="Set Product as New" src="images/set_a_product_as_new.png"/></a>
+									</div>
+									<div class="clear"></div>
+								</div>																<p id="add-lastest-products" class="step-number">3. Add Special Products</p>																<div class="des-step">									<div class="step">										<p>For new product to show in home page, you will need to select new for each product.</p>										<ul class="list-step">											<li>Login admin panel</li>											<li>From the top menu, go to <strong>Catalog > Manage Products</strong>.</li>											<li>Click to edit product you want to show.</li>											<li>Click on <strong>Prices</strong> tab on the left column</li>											<li>Choose <strong>Set Product as Special Price From Date</strong></li>											<li>Choose <strong>Set Product as Special Price To Date</strong></li>											<li>Click on <strong>Save</strong> button</li>										</ul>									</div>									<div class="step-img">										<a class="fancybox" title="Set Product as Special" href="images/set_product_as_lastest.png" target="_blank"><img alt="Set Product as Special" src="images/set_product_as_lastest.png"/></a>									</div>									<div class="clear"></div>								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="footer-container">
+				<div class="company">
+					<ul>
+						<li>&copy;2014 Buzzthemes. All Rights Reserved</li>
+					</ul>
+				</div>
+				<div class="link">
+					<ul>
+						<li><a href="https://www.facebook.com/BuzzthemesStore" alt="Facebook"><img src="images/fb.png"/></a></li>
+						<li><a href="https://twitter.com/buzzthemes" alt="Twitter"><img src="images/twitter.png"/></a></li>
+						<li><a href="https://plus.google.com/110628722310594260488" alt="Google+"><img src="images/gplus.png"/></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

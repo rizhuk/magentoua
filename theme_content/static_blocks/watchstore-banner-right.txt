@@ -1,0 +1,5 @@
+<div class="right-box-banner-home">
+<div class="box-banner-free-shipping right-box-banner-home-content"><a title="Free Shipping" href="#"><img src="{{skin url='images/free-shipping-box-banner1.png'}}" alt="Free Shipping" width="310"/></a></div>
+<div class="box-banner-sale-off right-box-banner-home-content"><a title="Summer Sale Extra 10%" href="#"><img src="{{skin url='images/free-shipping-box-banner2.png'}}" alt="Summer Sale Extra 10%" width="310"/></a></div>
+<div class="box-banner-support right-box-banner-home-content"><a title="Support" href="#"><img src="{{skin url='images/free-shipping-box-banner3.png'}}" alt="Support" width="310"/></a></div>
+</div>

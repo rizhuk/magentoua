@@ -1,0 +1,8 @@
+<div class="footer-payment-method container">
+<ul>
+<li class="first item visa"><a title="Visa" href="#">Visa</a></li>
+<li class="item master-card"><a title="Master Card" href="#">Master Card</a></li>
+<li class="item discover"><a title="Discover" href="#">Discover</a></li>
+<li class="last item paypal"><a title="Paypal" href="#">Paypal</a></li>
+</ul>
+</div>

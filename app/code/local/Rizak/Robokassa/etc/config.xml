@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+<modules>
+    <Rizak_Robokassa>
+        <version>1.0.0.0</version>
+    </Rizak_Robokassa>
+</modules>
+<global>
+    <models>
+        <robokassa>
+            <class>Rizak_Robokassa_Model</class><!-- Тут у нас лежат модели -->
+        </robokassa>
+    </models>
+    <blocks>
+        <robokassa>
+            <class>Rizak_Robokassa_Block</class><!-- Наши блоки -->
+        </robokassa>
+    </blocks>
+    <helpers>
+        <robokassa>
+            <class>Rizak_Robokassa_Helper</class><!-- И helper для переводов -->
+        </robokassa>
+    </helpers>
+</global>
+<frontend>
+    <routers>
+        <robokassa>
+            <use>standard</use>
+            <args>
+                <module>Rizak_Robokassa</module>
+                <frontName>robokassa</frontName>
+            </args>
+        </robokassa>
+    </routers>
+</frontend>
+</config>

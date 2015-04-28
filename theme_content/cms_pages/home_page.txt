@@ -1,0 +1,7 @@
+<div class="banner-home">
+<div class="banner-slider-home">{{block type="banners/banners" name="banners" template="banners/banners.phtml" before="-"}}</div>
+<div>{{block type="cms/block" block_id="watchstore-banner-right"}}</div>
+</div>
+<div class="list-products-home">{{block type="catalog/product_new" name="home.catalog.product.new" alias="product_new" template="catalog/product/new.phtml"}} {{block type="productlisting/special" name="productlisting.special" template="productlisting/productlisting-special.phtml"}}
+<div>{{block type="manufacturer/manufacturer" template="manufacturer/manufacture_slider.phtml"}}</div>
+</div>
