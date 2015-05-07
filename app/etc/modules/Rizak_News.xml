@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Rizak_News>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Rizak_News>
+    </modules>
+</config>
